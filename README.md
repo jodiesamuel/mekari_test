@@ -20,6 +20,9 @@ To see the results, please check on PostgreSQL using GUI apps, for example, DBea
 - Database: `postgres`<br>
 - Username: `postgres`<br>
 - Password: `postgres`<br>
+there are 2 tables that i created `transactions_summary` & `historical_transactions`<br>
+query:```select * from transactions_summary``` & ```select * from historical_transactions```<br>
+
 *Notes: the reason i'm using PostgreSQL you can be found in here:<br>
 https://docs.google.com/document/d/1ptCbeERk-FSruDO5ul0JTYiuBkZCcf_4TcAzCU4N0cU/edit?usp=sharing<br>
 Include with every question that I'm going to answer. <br><br>
