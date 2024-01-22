@@ -98,9 +98,7 @@ class TransactionAnalysis:
             'account_no': 'count',
             'balance_amt': 'median'
         })
-        transactions_summary['balance_amt'] = (
-            transactions_summary['deposit_amt'] - transactions_summary['withdrawal_amt']
-        )
+
         # Renaming Columns
         transactions_summary = transactions_summary.rename(columns={
             'date': 'max_date',
@@ -110,8 +108,12 @@ class TransactionAnalysis:
             'balance_amt': 'median_balance'
         }).reset_index()
 
+        # Create summary balance_amount
+        transactions_summary['balance_amt'] = transactions_summary['total_deposit'] - transactions_summary['total_withdrawal']
+
         # Adding updated_at to ensure updates data
         transactions_summary['updated_at'] = pd.to_datetime('now')
+        print(transactions_summary)
 
         return transactions_summary
 
