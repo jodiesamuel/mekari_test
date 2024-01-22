@@ -13,10 +13,16 @@ or you can follow the instructions below using homebrew: <br><br>
 `astro dev start`<br><br>
 4. Copy all files in `dags` folder (https://github.com/jodiesamuel/mekari_test/tree/main/dags) to `dags` in local astronomer project<br><br>
 5. Open the `Airflow` local and run the pipeline<br><br>
-<img width="373" alt="image" src="https://github.com/jodiesamuel/mekari_test/assets/31727419/c88eeb70-ed17-4131-891d-01239fd4201a">
+<img width="373" alt="image" src="https://github.com/jodiesamuel/mekari_test/assets/31727419/c88eeb70-ed17-4131-891d-01239fd4201a"><br><br>
 
-
-
+To see the results, please check on PostgreSQL using GUI apps, for example, DBeaver. the credentials you can use:<br>
+- Host: `localhost`<br>
+- Database: `postgres`<br>
+- Username: `postgres`<br>
+- Password: `postgres`<br>
+*Notes: the reason i'm using PostgreSQL you can be found in here:<br>
+https://docs.google.com/document/d/1ptCbeERk-FSruDO5ul0JTYiuBkZCcf_4TcAzCU4N0cU/edit?usp=sharing<br>
+Include with every question that I'm going to answer.
 
 
 
