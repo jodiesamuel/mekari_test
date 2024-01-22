@@ -20,6 +20,8 @@ schema:
         data_type: INTEGER
       - name: median_balance
         data_type: NUMERIC
+      - name: balance_amt
+        data_type: NUMERIC
       - name: updated_at
         data_type: TIMESTAMP
     unique_constraint: account_no
