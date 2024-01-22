@@ -22,7 +22,14 @@ To see the results, please check on PostgreSQL using GUI apps, for example, DBea
 - Password: `postgres`<br>
 *Notes: the reason i'm using PostgreSQL you can be found in here:<br>
 https://docs.google.com/document/d/1ptCbeERk-FSruDO5ul0JTYiuBkZCcf_4TcAzCU4N0cU/edit?usp=sharing<br>
-Include with every question that I'm going to answer.
+Include with every question that I'm going to answer. <br><br>
+
+If facing some errors with dependencies please stop the astronomer first using this line of code:<br>
+`astro dev stop`<br><br>
+Then copy file `dags/requirements.txt` into your dags folder and run the astronomer again <br>
+`astro dev start`
+
+
 
 
 
