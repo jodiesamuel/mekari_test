@@ -1,0 +1,46 @@
+postgres:
+  host: postgres
+  port: 5432
+  database: postgres
+  user: postgres
+  password: postgres
+
+schema:
+  - table_name: transactions_summary
+    columns:
+      - name: account_no
+        data_type: VARCHAR
+      - name: max_date
+        data_type: DATE
+      - name: total_deposit
+        data_type: NUMERIC
+      - name: total_withdrawal
+        data_type: NUMERIC
+      - name: transaction_count
+        data_type: INTEGER
+      - name: median_balance
+        data_type: NUMERIC
+      - name: updated_at
+        data_type: TIMESTAMP
+    unique_constraint: account_no
+
+  - table_name: historical_transactions 
+    columns:
+      - name: account_no
+        data_type: VARCHAR
+      - name: date
+        data_type: DATE
+      - name: transaction_details
+        data_type: VARCHAR
+      - name: chq_no
+        data_type: VARCHAR
+      - name: value_date
+        data_type: DATE
+      - name: withdrawal_amt
+        data_type: NUMERIC
+      - name: deposit_amt
+        data_type: NUMERIC
+      - name: balance_amt
+        data_type: NUMERIC
+      - name: updated_at
+        data_type: TIMESTAMP
